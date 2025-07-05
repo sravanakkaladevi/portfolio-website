@@ -20,9 +20,15 @@ const ServiceCard = ({ index, title, icon }) => (
         }}
         className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
       >
-        <img src={icon} alt="web-development" className="w-16 h-16 object-contain" loading="lazy" />
-
-        <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+        <img
+          src={icon}
+          alt={title}
+          className="w-16 h-16 object-contain"
+          loading="lazy"
+        />
+        <h3 className="text-white text-[20px] font-bold text-center">
+          {title}
+        </h3>
       </div>
     </motion.div>
   </Tilt>
@@ -40,11 +46,12 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a Computer Science student at SRM University and multilingual speaker with a passion
-        for ethical hacking, artificial intelligence, and neural language processing. I am looking
-        to join a company that values innovation, collaboration, and continuous learning and am
-        confident that my enthusiasm and drive will help me succeed in any role that leverages my
-        passion for technology.
+        I am an MCA student at Aurora's PG College, affiliated with Osmania University.
+        Passionate about Software Development and Cybersecurity, I’m currently learning full-stack
+        development, Data Structures in Python, and hands-on skills in ethical hacking and bug bounty.
+        I have built projects in Java, Python, and Machine Learning, and I enjoy creating clean and functional
+        user interfaces. I'm highly motivated, disciplined, and always eager to grow through real-world challenges
+        and contribute to innovative tech teams.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
